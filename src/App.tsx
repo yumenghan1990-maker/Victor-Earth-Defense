@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'motion/react';
 
 export default function App() {
   const [gameState, setGameState] = useState<GameState | null>(null);
-  const [language, setLanguage] = useState<'en' | 'zh'>('en');
+  const [language, setLanguage] = useState<'en' | 'zh'>('zh');
 
   const toggleLanguage = () => {
     setLanguage(prev => prev === 'en' ? 'zh' : 'en');
